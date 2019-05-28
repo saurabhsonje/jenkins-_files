@@ -1,0 +1,10 @@
+#from centos
+FROM openjdk
+#maintan by
+MAINTAINER saurabh@gmail.com
+#RUN yum update -y
+RUN mkdir /opt/maven
+WORKDIR /opt/maven
+RUN yum install maven
+Run opt/maven1
+Run mvn archetype:generate -DgroupId=saurabhwebserver -DartifactId=mavenweb -DarchetypeArtifactId=maven-archetype-quickstart DarchetypeVersion=1.4 -DinteractiveMode=false                                                   
